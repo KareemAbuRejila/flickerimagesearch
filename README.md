@@ -5,7 +5,7 @@ Coding Chall
 
 | Photo1                                                                                                            | Photo2                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [![IMAGE]([https://github.com/KareemAbuRejila/ImageSliderCompose/blob/main/images/Screenshot_20240921_211258.png](https://github.com/KareemAbuRejila/flickerimagesearch/blob/main/imgs/ss1.png))] | |
+| [![IMAGE]((https://github.com/KareemAbuRejila/flickerimagesearch/blob/main/imgs/ss1.png))] | |
 
 ## Built With 🛠
 
