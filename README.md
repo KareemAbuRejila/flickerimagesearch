@@ -3,9 +3,9 @@
 Coding Chall
 ## Screenshots
 
-| Photo1                                                                                                            | Photo2                                                                                                             |
-|-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [![IMAGE](https://github.com/KareemAbuRejila/flickerimagesearch/blob/main/imgs/ss1.png)] | |
+| Photo1                                                                                                          | Photo2                                                                                 |
+|-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+|                                       ![IMAGE](https://github.com/KareemAbuRejila/flickerimagesearch/blob/main/imgs/ss1.png)                                                                           | ![IMAGE](https://github.com/KareemAbuRejila/flickerimagesearch/blob/main/imgs/ss2.png) |
 
 ## Built With 🛠
 

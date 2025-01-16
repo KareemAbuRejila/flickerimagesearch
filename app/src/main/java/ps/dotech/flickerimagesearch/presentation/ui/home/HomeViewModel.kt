@@ -30,7 +30,7 @@ class HomeViewModel @Inject constructor(
         if (isNetworkAvailable(context)){
             viewModelScope.launch {
                 try {
-                    val list = repo.searchImages(tags).collect{
+                    repo.searchImages(tags).collect{
                         _images.value = ComponentUIState(data = it.toResponse())
                     }
                 }catch (e:Exception){

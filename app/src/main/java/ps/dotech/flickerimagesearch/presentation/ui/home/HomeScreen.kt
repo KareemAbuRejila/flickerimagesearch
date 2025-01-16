@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import ps.dotech.flickerimagesearch.domain.models.ImageItem
 import ps.dotech.flickerimagesearch.presentation.common.Dimens.MediumPadding1
 import ps.dotech.flickerimagesearch.presentation.ui.components.ErrorBox
 import ps.dotech.flickerimagesearch.presentation.ui.components.ImageListItem
@@ -23,7 +24,7 @@ import ps.dotech.flickerimagesearch.presentation.ui.components.search.SearchBar
 @Composable
 fun HomeScreen(
     viewModel: HomeViewModel = hiltViewModel(),
-    navigateToDetailsScreen: (String) -> Unit,
+    navigateToDetailsScreen: (ImageItem) -> Unit,
 ){
     val state = viewModel.images.value
 
@@ -37,7 +38,8 @@ fun HomeScreen(
             .statusBarsPadding()
     ) {
         SearchBar(
-            onValueChange = { viewModel.search(it) }
+            onValueChange = { viewModel.search(it) },
+            hint = "Search"
         )
         when{
             state.isLoading ->  LoadingBox()
@@ -50,7 +52,7 @@ fun HomeScreen(
                     state.data?.list?.let {list->
                         items(list){img->
                             ImageListItem(img = img) {
-                                navigateToDetailsScreen(img.link)
+                                navigateToDetailsScreen(img)
                             }
                         }
                     }
